@@ -1,0 +1,62 @@
+body,
+div,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+header,
+nav,
+ul,
+li,
+footer {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 1em;
+}
+.header {
+  display: flex;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+}
+
+.header a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.header-logo {
+  width: 30%;
+}
+.header-logo img {
+  max-height: 100px;
+}
+.header-links {
+  width: 40%;
+}
+.header-col i {
+  margin-right: 10px;
+}
+.header-container {
+  padding: 10px 20px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.header-nav {
+  list-style: none;
+}
+.header-nav li {
+  display: inline-block;
+  padding: 0 10px;
+}
