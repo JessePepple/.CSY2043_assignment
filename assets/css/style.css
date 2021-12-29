@@ -12,9 +12,14 @@ header,
 nav,
 ul,
 li,
-footer {
+img,
+p,
+footer,
+button {
   padding: 0;
   margin: 0;
+  border: 0;
+  box-shadow: none;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -126,4 +131,66 @@ ul.menu-icons li {
 }
 a:focus {
   outline: none;
+}
+.home-banner {
+  height: 600px;
+  margin: 30px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.home-banner img {
+  width: 100%;
+}
+.home-banner .banner-title {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 0px;
+  max-width: 50%;
+}
+
+.home-banner .banner-title h1 {
+  font-weight: 800;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.home-banner .banner-title p {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.home-banner .banner-title button {
+  background: #1dbe24;
+  color: #fff;
+  margin-top: 40px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.home-banner .banner-title button:hover {
+  opacity: 0.8;
+}
+.home-banner .nav-buttons {
+  position: absolute;
+  z-index: 1;
+  bottom: 50px;
+}
+.home-banner .nav-buttons a {
+  display: inline-block;
+  background: rgba(196, 196, 196, 0.83);
+  color: #000;
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 10px 20px;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media (max-width: 1170px) {
+  .container {
+    margin: 0 30px;
+  }
 }
