@@ -32,4 +32,5 @@ menu_toggle.addEventListener('click', (e) => {
         menu_icon.classList.add('fa-times');
         
     }
-})
+});
+

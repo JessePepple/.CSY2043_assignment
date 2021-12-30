@@ -194,3 +194,59 @@ a:focus {
     margin: 0 30px;
   }
 }
+.login-modal {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 130%;
+  top: 0;
+  z-index: 999;
+  overflow: auto;
+}
+.login-modal .cancel-button {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.login-box {
+  background: #fff;
+  border-radius: 6px;
+  width: 80%;
+  margin: 10% auto;
+  padding: 30px;
+}
+.block-forms input[type="text"],
+.block-forms input[type="password"],
+.block-forms input[type="email"] {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  padding: 10px 20px;
+  width: 100%;
+}
+.form-wrap {
+  margin-bottom: 1rem;
+}
+label {
+  display: inline-block;
+  margin: 20px 0;
+}
+* {
+  box-sizing: border-box;
+}
+.btn-primary {
+  background: #1dbe24;
+  color: #fff;
+
+  display: inline-block;
+  padding: 15px 25px;
+  font-weight: 900;
+  cursor: pointer;
+  border: 0;
+}
