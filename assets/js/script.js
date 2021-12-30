@@ -34,3 +34,24 @@ menu_toggle.addEventListener('click', (e) => {
     }
 });
 
+// login modal
+var reg_btn = getId("register_btn");
+var cancel_btn = getId("login_cancel");
+var login_modal = document.querySelector('.login-modal');
+var login_box = document.querySelector('.login-box');
+reg_btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    login_modal.style.display = 'block';
+} );
+
+cancel_btn.addEventListener('click', () => {
+    login_modal.style.display = 'none';
+});
+
+login_modal.addEventListener('click', () =>
+{
+    login_modal.style.display = 'none';
+} );
+login_box.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
