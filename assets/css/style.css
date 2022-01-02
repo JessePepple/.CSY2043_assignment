@@ -304,3 +304,17 @@ label {
   bottom: 0;
   font-weight: bold;
 }
+
+ul.breadcrumb {
+  list-style: none;
+  margin: 50px 20px;
+}
+
+ul.breadcrumb li {
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+}
+ul.breadcrumb a {
+  color: #13df1b !important;
+}
