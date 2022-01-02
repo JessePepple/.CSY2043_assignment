@@ -107,6 +107,7 @@ a {
   background: #13df1b !important;
   color: #fff;
   border: 1px solid #000;
+  font-weight: bold;
 }
 li > address {
   color: #13e11b;
