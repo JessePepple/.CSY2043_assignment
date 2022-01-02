@@ -32,7 +32,7 @@ body {
   font-size: 1em;
   text-transform: uppercase;
   font-weight: normal;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -53,6 +53,14 @@ body {
 }
 .header-container {
   padding: 10px 20px;
+}
+.header-active {
+  padding: 10px 20px;
+  background: #13df1b;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 a {
