@@ -53,6 +53,8 @@ body {
 }
 .header-links {
   width: 40%;
+  display: flex;
+  justify-content: flex-end;
 }
 .header-col i {
   margin-right: 10px;
