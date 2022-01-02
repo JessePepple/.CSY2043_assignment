@@ -269,10 +269,12 @@ label {
 .about {
   margin: 50px;
 }
-.about p {
+.about p,
+.courses p {
   font-weight: 400;
   line-height: 1.2;
   font-size: 1.4em;
+  padding: 10px 15px;
 }
 .about-gallery {
   display: flex;
@@ -317,4 +319,19 @@ ul.breadcrumb li {
 }
 ul.breadcrumb a {
   color: #13df1b !important;
+}
+.courses {
+  margin: 50px;
+}
+.courses h2 {
+  background: #13df1b;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px 0;
+}
+.courses .sec {
+  margin: 20px 0;
 }
