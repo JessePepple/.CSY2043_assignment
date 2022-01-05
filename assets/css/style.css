@@ -162,8 +162,19 @@ a:focus {
   position: absolute;
   z-index: 1;
   top: 50px;
-  left: 0px;
+  left: 20px;
   max-width: 50%;
+  color: #fff;
+}
+.home-banner .banner-overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
 }
 
 .home-banner .banner-title h1 {
@@ -365,4 +376,7 @@ ul.breadcrumb a {
 }
 .courses .sec {
   margin: 20px 0;
+}
+.carousel-img {
+  display: none;
 }
