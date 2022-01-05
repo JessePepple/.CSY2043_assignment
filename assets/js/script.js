@@ -55,3 +55,39 @@ login_modal.addEventListener('click', () =>
 login_box.addEventListener('click', (e) => {
     e.stopPropagation();
 });
+
+// image carousel
+
+var current_img = 1;
+
+carousel(current_img);
+
+// carousel next and prev buttons
+
+function to_carousel(image)
+{
+    carousel(current_img += image);
+    return false;
+    
+}
+function carousel(image)
+{
+    var i;
+    var carousel_images = document.getElementsByClassName('carousel-img');
+    
+    if(image > carousel_images.length)
+        current_img = 1;
+
+    if(image < 1)
+        current_img = carousel_images.length;
+    
+    // incase any carousel image is visible, set display to none
+    for(i = 0; i < carousel_images.length; i++)
+    {
+        carousel_images[i].style.display = "none";
+    }
+
+    // make the current carousel index visible
+
+    carousel_images[current_img - 1].style.display = "block";
+}
