@@ -35,14 +35,22 @@ menu_toggle.addEventListener('click', (e) => {
 });
 
 // login modal
-var reg_btn = getId("register_btn");
+var reg_btn = document.getElementsByClassName("register_btn");
+
 var cancel_btn = getId("login_cancel");
 var login_modal = document.querySelector('.login-modal');
 var login_box = document.querySelector('.login-box');
-reg_btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    login_modal.style.display = 'block';
-} );
+
+if(reg_btn) 
+{
+    for(var i = 0; i < reg_btn.length; i++) 
+    {
+        reg_btn[i].addEventListener('click', (e) => {
+            e.preventDefault();
+            login_modal.style.display = 'block';
+        } );
+    }
+}
 
 cancel_btn.addEventListener('click', () => {
     login_modal.style.display = 'none';
